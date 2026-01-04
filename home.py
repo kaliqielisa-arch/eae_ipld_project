@@ -21,11 +21,11 @@ def home_page():
 
 
     # ----- Top title -----
-    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Enric</h1></div>""")  # TODO: Add your name
+    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Elisa</h1></div>""")  
 
 
     # ----- Profile image file -----
-    profile_image_file_path = "profile.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+    profile_image_file_path = "profile.png"      
 
     with open(profile_image_file_path, "rb") as img_file:
         img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -40,37 +40,37 @@ def home_page():
 
 
     # ----- Personal title or short description -----
-    current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+    current_role = "Master in Big Data"  
 
     st.html(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""")
 
-    st.write("##")    # Adding some space
+    st.write("##")    
 
 
     # ----- About me section -----
     st.subheader("About Me")
 
-    # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
+    
     st.write("""
-    - 🧑‍💻 I am a ML Eng that you are doing
+    - 🧑‍💻 I am a student in Big Data
 
-    - 🛩️ prev: <Previous Experience, Background or Studies>
+    - 🛩️ prev studied: Business Technology
 
-    - ❤️ <Your Passion and/or Interests>
+    - ❤️ business
 
-    - 🤖 <Your Personal Projects>
+    - 🤖 many
 
-    - 🏂 <Your Hobbies>
+    - 🏂 film
 
-    - 📫 How to reach me: <Your Email>
+    - 📫 How to reach me: ekaliqi@student.eae.es
 
     - 🏠 Barcelona
     """)
 
-    # Feel free to add other points like your Linkedin, Github, Social Media, etc.
+    
 
 
-# This is ensambling the entire app with the different pages and the navigation menu
+
 pg = st.navigation([
     st.Page(home_page, title="Home", icon="👋"),
     st.Page("pages/01_image_cropper.py", title="Image Cropper", icon="🖼️"),
