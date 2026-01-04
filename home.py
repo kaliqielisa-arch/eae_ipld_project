@@ -16,7 +16,7 @@ def home_page():
         st.header("Introduction to Programming Languages for Data")
         st.write("###")
         st.write("***Final Project - Dec 2025***")
-        st.write("**Author:** <your name> ")
+        st.write("**Author:** Elisa Kaliqi ")
         st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
@@ -56,11 +56,6 @@ def home_page():
 
     - 🛩️ prev studied: Business Technology
 
-    - ❤️ business
-
-    - 🤖 many
-
-    - 🏂 film
 
     - 📫 How to reach me: ekaliqi@student.eae.es
 
